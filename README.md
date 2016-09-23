@@ -183,7 +183,7 @@ protected abstract void initView() ;
     }
 ```
 BaseFragment的封装类似，下文就不再赘述。
-##3、控件封装
+##2、控件封装
 widget下是两个自定义控件，BottomNavigation是底部导航栏，使用方法在MainActivity里展示得非常清楚，而BottomFragment并不是一个Fragment，只是一个从屏幕下方弹起的弹窗，效果如下：
 ![BottomFragment](http://img.blog.csdn.net/20160815152948962)
 而其中的数据源就是BottomType类型的，包含图片和文字描述
