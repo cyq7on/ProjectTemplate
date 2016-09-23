@@ -36,12 +36,6 @@ public class MainActivity extends BaseActivity implements BottomNavigation.onIte
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        mBottomNavigation.setCurrentTab(0);
-    }
-
-    @Override
     protected void initView() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         BaseFragment homeFragment = new HomeFragment();
@@ -66,6 +60,7 @@ public class MainActivity extends BaseActivity implements BottomNavigation.onIte
         items.add(new BottomNavigation.BottomNavigationItem(R.drawable.icon_alarm_information, R.string.information, AlarmInformationFragment.class));
         items.add(new BottomNavigation.BottomNavigationItem(R.drawable.icon_my, R.string.mine, MineFragment.class));
         mBottomNavigation.initData(items, this);
+        mBottomNavigation.setCurrentTab(0);
     }
 
     @Override
@@ -81,7 +76,8 @@ public class MainActivity extends BaseActivity implements BottomNavigation.onIte
             case R.string.home:
                 targetFragment = getSupportFragmentManager().
                         findFragmentByTag(HomeFragment.class.getSimpleName());
-                if (targetFragment.isVisible()) {
+                //只有第一次homeFragment会为空，目前还没想到更优雅的处理方式
+                if (targetFragment == null || targetFragment.isVisible()) {
                     return;
                 }
                 break;

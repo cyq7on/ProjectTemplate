@@ -1,13 +1,13 @@
-#一、工程配置
+﻿#一、工程配置
 ##1、打包配置
-app目录keystore文件夹下是keystore文件，打包已经由gradle脚本配置好：
+打开注释，自己完善一下：
 ```gradle
 signingConfigs {
         release {
-            keyAlias 'ceo'
-            keyPassword 'tydic001'
-            storeFile file('keystore/tydic.keystore')
-            storePassword 'tydic001'
+//            keyAlias 'xxx'
+//            keyPassword 'xxx'
+//            storeFile file('sign/xxx.jks')
+//            storePassword 'xxx'
         }
     }
 
@@ -21,58 +21,7 @@ buildTypes {
 ```
 打包时直接选择release模式运行即可：
 ![Build Variant](http://img.blog.csdn.net/20160815114656460)
-##2、依赖配置
-```gradle
-compile 'com.android.support:appcompat-v7:23.4.0'
-compile 'com.jakewharton:butterknife:8.2.1'
-apt 'com.jakewharton:butterknife-compiler:8.2.1'
-compile 'com.android.support:recyclerview-v7:23.4.0'
-compile 'com.android.support:design:23.4.0'
-compile 'com.github.rey5137:material:1.2.4'
-compile 'com.orhanobut:logger:1.15'
-compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.3'
-compile 'com.google.code.gson:gson:2.7'
-compile 'com.squareup.retrofit2:retrofit:2.1.0'
-compile 'com.squareup.retrofit2:converter-gson:2.0.2'
-compile 'com.snappydb:snappydb-lib:0.5.2'
-compile 'com.esotericsoftware.kryo:kryo:2.24.0'
-compile 'com.luffykou:android-common-utils:1.1.3'
-```
-下面来一一解释
 
-- compile 'com.android.support:appcompat-v7:23.4.0'
-- compile 'com.android.support:recyclerview-v7:23.4.0'
-- compile 'com.android.support:design:23.4.0'
-Google提供的支持库
-
-- compile 'com.jakewharton:butterknife:8.2.1'
-apt 'com.jakewharton:butterknife-compiler:8.2.1'
-Jakewharton大神的butterknife，省去findViewById等方法，简洁高效
-
-- compile 'com.github.rey5137:material:1.2.4'
-material风格的各种基本控件
-
-- compile 'com.orhanobut:logger:1.15'
-一个强大的日志工具
-
-- compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.3'
-一个封装得十分优秀的RecyclerView Adapter的帮助类
-
-- compile 'com.google.code.gson:gson:2.7'
-Gson
-
-- compile 'com.squareup.retrofit2:retrofit:2.1.0'
-compile 'com.squareup.retrofit2:converter-gson:2.0.2'
-Retrofit，type-safe HTTP client for Android and Java 
-
-- compile 'com.snappydb:snappydb-lib:0.5.2'
-compile 'com.esotericsoftware.kryo:kryo:2.24.0'
-一个操作简单的键值对数据库
-
-- compile 'com.luffykou:android-common-utils:1.1.3'
-一个非常全的工具类，包含了Android开发的方方面面
-
-以上库都非常容易在github上找到，不清楚用法或者想学习源码的，可以自行去搜索。
 #二、代码封装
 ##1、BaseActivity
 数据和视图的初始化可分别以下方法中实现
@@ -211,6 +160,18 @@ protected abstract void initView() ;
         startActivity(intent);
     }
 ```
+该方法用于处理Fragment
+```java
+	protected void showFragment(String hideTag,String showTag) {
+        FragmentTransaction transaction = getSupportFragmentManager().
+                beginTransaction();
+        Fragment hideFragment =   getSupportFragmentManager().findFragmentByTag(hideTag);
+        Fragment showFragment = getSupportFragmentManager().findFragmentByTag(showTag);
+        transaction.hide(hideFragment);
+        transaction.show(showFragment);
+        transaction.commit();
+    }
+```
 以下两个方法对弹吐司进行了简单的封装
 ```java
 	protected void showToastShort(String msg) {
@@ -253,3 +214,8 @@ widget下是两个自定义控件，BottomNavigation是底部导航栏，使用�
     }
 }
 ```
+附上几张主页面截图：
+![这里写图片描述](http://img.blog.csdn.net/20160923165822074)
+![这里写图片描述](http://img.blog.csdn.net/20160923165836293)
+![这里写图片描述](http://img.blog.csdn.net/20160923165847090)
+###感谢： WhyAwaysMe
