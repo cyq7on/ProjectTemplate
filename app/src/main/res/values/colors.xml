@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0078C2</color>
+    <color name="colorPrimaryDark">#0078C2</color>
+    <color name="colorAccent">#0078C2</color>
+    <color name="badge_color">#ff0000</color>
+    <color name="colorBottomNavigationInactive">#747474</color>
+    <color name="colorBottomNavigationInactiveSelected">#3F51B5</color>
+    <color name="dialog_color">#eeeeee</color>
+    <color name="hint_font_color">#CECECE</color>
+    <color name="light_blue">#67b4ff</color>
+    <color name="btnColor">#05AEC9</color>
+    <color name="line">#e1e1e1</color>
+    <color name="backgroundColor">#f5f5f5</color>
+    <color name="hineColor">#999999</color>
+    <color name="black">#222222</color>
+    <color name="white">#FFF</color>
+    <color name="regist">#DD8180</color>
+</resources>

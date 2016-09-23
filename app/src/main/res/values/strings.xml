@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">template</string>
+
+    <string name="start">开始</string>
+    <string name="home">主页</string>
+    <string name="shopping_mall">商城</string>
+    <string name="information">信息</string>
+    <string name="mine">我的</string>
+
+    <string name="time">定时</string>
+    <string name="rename">重命名</string>
+    <string name="pair_mode">配对模式</string>
+    <string name="top">置顶</string>
+    <string name="restore_factory_settings">恢复出厂模式</string>
+    <string name="delete">删除</string>
+    <string name="alarm_history">报警历史</string>
+    <string name="notification_mode">通知方式</string>
+    <string name="scene_mode">情景模式</string>
+    <string name="visiting_information">来访信息</string>
+    <string name="volume">音量调节</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="add_device_manager">添加设备管家</string>
+
+
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="regist_now">现在就去注册</string>
+    <string name="regist">注册</string>
+    <string name="enter_your_email">请输入邮箱</string>
+    <string name="confirm">确定</string>
+    <string name="confirm_space">确  定</string>
+
+    <string name="cancel">取消</string>
+    <string name="home_page">主页</string>
+    <string name="use_email_regist">请用邮箱进行注册</string>
+    <string name="confirm_password">请确认密码</string>
+    <string name="setting_password">请设置6~18位的密码</string>
+    <string name="agree">同意</string>
+    <string name="user_agreement">《用户协议》</string>
+    <string name="and">和</string>
+    <string name="privacy_policy">《隐私政策》</string>
+    <string name="title_activity_login2">Sign in</string>
+
+
+    <string name="account_and_security">帐户与安全</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="name">姓名</string>
+    <string name="please_input">请填写</string>
+    <string name="phone">手机</string>
+    <string name="address">住址</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="modify_password">修改密码</string>
+    <string name="sub_account_management">子帐户管理</string>
+    <string name="add_sub_account">子账户设定</string>
+    <string name="exit_login">退出登录</string>
+    <string name="please_enter_new_password">请输入新密码</string>
+    <string name="please_enter_new_password_again">请再次输入新密码</string>
+    <string name="not_added">暂未添加！</string>
+    <string name="whether_to_delete">是否删除?</string>
+    <string name="submit">提  交</string>
+    <string name="wifi">WIFI</string>
+    <string name="stop">停     止</string>
+    <string name="connect">连     接</string>
+    <string name="configuration_timeout">配置超时</string>
+    <string name="reconnect">重新连接</string>
+    <string name="start_connect">开始连接</string>
+    <string name="help_and_feedback">帮助与反馈</string>
+    <string name="online_instruction">在线说明书</string>
+    <string name="about_us">关于我们</string>
+    <string name="child_device_list">子设备列表</string>
+
+</resources>
