@@ -1,9 +1,9 @@
 package com.cyq7on.template.activity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 
-import com.rey.material.widget.Button;
 import com.cyq7on.template.R;
 import com.cyq7on.template.base.BaseActivity;
 

@@ -1,6 +1,7 @@
 package com.cyq7on.template.widget;
 
 import android.content.Context;
+import android.support.design.widget.BottomSheetDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,6 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.rey.material.app.BottomSheetDialog;
 import com.cyq7on.template.R;
 import com.cyq7on.template.bean.BottomType;
 

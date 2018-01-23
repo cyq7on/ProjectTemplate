@@ -2,12 +2,12 @@ package com.cyq7on.template.activity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.cyq7on.template.R;
 import com.cyq7on.template.base.BaseActivity;
-import com.rey.material.widget.CheckBox;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -9,7 +9,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.rey.material.widget.ProgressView;
 import com.cyq7on.template.R;
 import com.cyq7on.template.base.BaseFragment;
 
@@ -25,8 +24,6 @@ import butterknife.ButterKnife;
 public class ShoppingMallFragment extends BaseFragment {
     @BindView(R.id.webview)
     WebView webView;
-    @BindView(R.id.loadingview)
-    ProgressView loadingView;
     protected WebSettings webViewSettings;
 
     @Nullable
@@ -41,8 +38,6 @@ public class ShoppingMallFragment extends BaseFragment {
     protected void initView() {
         setUpToolbarTitle(R.string.shopping_mall);
 
-
-        loadingView.setVisibility(View.GONE);
         webViewSettings = webView.getSettings();
         webViewSettings.setJavaScriptEnabled(true);
         webViewSettings.setJavaScriptCanOpenWindowsAutomatically(true);
