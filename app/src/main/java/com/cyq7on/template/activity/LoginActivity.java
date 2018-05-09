@@ -78,12 +78,12 @@ public class LoginActivity extends BaseActivity {
             showToastShort("请输入密码");
             return;
         }
-        openActivity(MainActivity.class);
-        /*if(this.name.equals(name) && this.pwd.equals(pwd)){
-            openActivity(MainActivity.class);
+        if(this.name.equals(name) && this.pwd.equals(pwd)){
+//            openActivity(MainActivity.class);
+            showToastShort("登录成功");
         }else {
             showToastShort("登录失败");
-        }*/
+        }
     }
 
     @OnClick({R.id.tv_forget_password, R.id.tv_regist})
