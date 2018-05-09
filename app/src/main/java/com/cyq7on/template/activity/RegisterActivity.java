@@ -2,6 +2,7 @@ package com.cyq7on.template.activity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,7 +51,7 @@ public class RegisterActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regist, R.string.register_or_forget, MODE_BACK);
+        setContentView(R.layout.activity_regist, R.string.register_or_forget, R.menu.menu_register);
         ButterKnife.bind(this);
     }
 
@@ -156,5 +157,11 @@ public class RegisterActivity extends BaseActivity {
                 });
                 break;
         }
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        finish();
+        return true;
     }
 }
