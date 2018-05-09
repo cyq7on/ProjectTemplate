@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">template</string>
+    <string name="app_name">医疗平台</string>
 
     <string name="start">开始</string>
     <string name="home">主页</string>
@@ -24,7 +24,7 @@
 
     <string name="login">登录</string>
     <string name="forget_password">忘记密码</string>
-    <string name="regist_now">现在就去注册</string>
+    <string name="regist_now">立即注册</string>
     <string name="regist">注册</string>
     <string name="enter_your_email">请输入邮箱</string>
     <string name="confirm">确定</string>
@@ -49,6 +49,7 @@
     <string name="please_input">请填写</string>
     <string name="phone">手机</string>
     <string name="address">住址</string>
+    <string name="account">账号</string>
     <string name="email">邮箱</string>
     <string name="password">密码</string>
     <string name="modify_password">修改密码</string>
@@ -70,5 +71,8 @@
     <string name="online_instruction">在线说明书</string>
     <string name="about_us">关于我们</string>
     <string name="child_device_list">子设备列表</string>
+
+    <string name="login_account_hint">请输入账号</string>
+    <string name="login_pwd_hint">请输入密码</string>
 
 </resources>
