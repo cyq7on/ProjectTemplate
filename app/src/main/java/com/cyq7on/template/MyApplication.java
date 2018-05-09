@@ -5,6 +5,9 @@ import android.content.Context;
 
 import com.orhanobut.logger.Logger;
 
+import cn.bmob.sms.BmobSMS;
+
+
 /**
  * @Description:
  * @author: cyq7on
@@ -21,6 +24,8 @@ public class MyApplication extends Application {
         context = this;
         Logger.init("template")
               .methodCount(3);
+        BmobSMS.initialize(context, "4d000900ade7bd3e7525182f6affaf96");
+//        Bmob.initialize(context, "4d000900ade7bd3e7525182f6affaf96");
     }
 
     public static Context getContext() {

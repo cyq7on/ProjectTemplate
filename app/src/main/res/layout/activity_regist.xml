@@ -22,7 +22,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/black_border"
             android:layout_width="match_parent"
-            android:layout_height="60dp" >
+            android:layout_height="50dp" >
 
             <TextView
                 android:layout_marginLeft="10dp"
@@ -50,7 +50,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/black_border"
             android:layout_width="match_parent"
-            android:layout_height="65dp" >
+            android:layout_height="50dp" >
 
             <TextView
                 android:layout_marginLeft="10dp"
@@ -71,13 +71,15 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
 
-            <Button
+            <TextView
+                android:padding="5dp"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/black_border"
                 android:id="@+id/btnGetCode"
                 android:text="@string/register_dynamic_pwd_get"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp" />
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,7 +88,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/black_border"
             android:layout_width="match_parent"
-            android:layout_height="60dp" >
+            android:layout_height="50dp" >
 
             <TextView
                 android:layout_marginLeft="10dp"
@@ -114,7 +116,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/black_border"
             android:layout_width="match_parent"
-            android:layout_height="60dp" >
+            android:layout_height="50dp" >
 
             <TextView
                 android:layout_marginLeft="10dp"
