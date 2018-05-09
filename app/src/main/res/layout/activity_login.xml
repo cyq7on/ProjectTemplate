@@ -110,7 +110,7 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/tv_regist"
         android:textColor="@color/btnColor"
-        android:text="@string/regist_now"
+        android:text="@string/register_now"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

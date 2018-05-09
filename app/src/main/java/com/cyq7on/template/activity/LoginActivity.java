@@ -52,14 +52,14 @@ public class LoginActivity extends BaseActivity {
 
     @OnClick(R.id.btn_login)
     public void login() {
-        SPUtil.putAndApply(this,IS_LOGIN,true);
+        SPUtil.putAndApply(this, IS_LOGIN, true);
     }
 
     @OnClick({R.id.tv_forget_password, R.id.tv_regist})
     public void onClick(View view) {
-        if(view.getId() == R.id.tv_forget_password) {
-
-        } else if(view.getId() == R.id.tv_regist) {
+        if (view.getId() == R.id.tv_forget_password) {
+            openActivity(RegisterActivity.class);
+        } else if (view.getId() == R.id.tv_regist) {
             openActivity(RegisterActivity.class);
         }
     }

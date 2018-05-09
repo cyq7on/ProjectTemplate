@@ -5,8 +5,8 @@
     android:id="@id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?attr/colorPrimary"
-    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?android:attr/actionBarSize"
     app:layout_scrollFlags="scroll|enterAlways"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
@@ -15,7 +15,7 @@
         android:id="@id/toolbar_title"
         android:gravity="center"
         android:textSize="18sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

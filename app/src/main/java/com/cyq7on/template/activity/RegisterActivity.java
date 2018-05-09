@@ -32,7 +32,7 @@ public class RegisterActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regist, R.string.regist, MODE_BACK);
+        setContentView(R.layout.activity_regist, R.string.register_or_forget, MODE_BACK);
         ButterKnife.bind(this);
     }
 

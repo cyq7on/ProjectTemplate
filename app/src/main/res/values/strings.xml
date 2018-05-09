@@ -24,8 +24,9 @@
 
     <string name="login">登录</string>
     <string name="forget_password">忘记密码</string>
-    <string name="regist_now">立即注册</string>
-    <string name="regist">注册</string>
+    <string name="register_now">立即注册</string>
+    <string name="register">注册</string>
+    <string name="register_or_forget">注册或忘记密码</string>
     <string name="enter_your_email">请输入邮箱</string>
     <string name="confirm">确定</string>
     <string name="confirm_space">确  定</string>
@@ -74,5 +75,14 @@
 
     <string name="login_account_hint">请输入账号</string>
     <string name="login_pwd_hint">请输入密码</string>
+
+    <string name="register_account">手机号</string>
+    <string name="register_dynamic_pwd">动态密码</string>
+    <string name="register_pwd">设置密码</string>
+    <string name="register_pwd_second">确认密码</string>
+    <string name="register_account_hint">请输入手机号</string>
+    <string name="register_dynamic_pwd_hint">请输入</string>
+    <string name="register_pwd_hint">请输入8–16位数字、字母</string>
+    <string name="register_pwd_second_hint">请重新输入密码</string>
 
 </resources>
